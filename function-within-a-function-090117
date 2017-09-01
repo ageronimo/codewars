@@ -1,0 +1,12 @@
+// return a function that returns n
+
+// ES5
+function always (n) {
+  return function always() {
+    return n;
+  }
+}
+
+// ES6
+let always = n => () => n;
+	// implicit return ('implied')
